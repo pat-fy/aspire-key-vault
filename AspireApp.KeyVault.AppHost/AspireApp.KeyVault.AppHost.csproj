@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsAspireHost>true</IsAspireHost>
+    <UserSecretsId>1c8bf7ce-c21c-44cf-a277-f9783d96e307</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AspireApp.KeyVault.ApiService\AspireApp.KeyVault.ApiService.csproj" />
+    <ProjectReference Include="..\AspireApp.KeyVault.Web\AspireApp.KeyVault.Web.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.AppHost" Version="8.2.0" />
+    <PackageReference Include="Aspire.Hosting.Azure.KeyVault" Version="8.2.0" />
+  </ItemGroup>
+
+</Project>
